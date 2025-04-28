@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.2/.schema/devbox.schema.json",
+  "packages": {
+    "zig":   "0.14.0",
+    "cmake": "latest",
+    "ninja": "latest",
+    "just":  "latest",
+    "xorg_sys_opengl": {
+      "version": "latest",
+    },
+    "mesa": "latest",
+    "libglvnd": {
+      "version": "latest",
+      "outputs": ["dev"],
+    },
+    "qt6.qtbase": {
+      "version": "latest",
+      "outputs": ["dev"],
+    },
+  },
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null",
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1",
+      ],
+    },
+  },
+}
